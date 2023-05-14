@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meipaly</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FONT CHỮ OSWALD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- SLICK DÙNG ĐỂ HIỂN THỊ SLIDE CHẠY CHẠY HIỆU ỨNG -->
+    <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+    <!-- FANCYBOX ĐỂ HIỂN THỊ HÌNH ẢNH THEO DẠNG BỘ SƯU TẬP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- ANIMATION - HIỆU ỨNG -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- header độ rộng k đụng zô, mà trong thẻ header có thẻ div để bọc toàn bộ nội dung trong đó để hiển thị nội dung chính giữa, set cứng ở giữa 1280px cho div -->
+    <header class="header">
+        <!-- Trong 1 thẻ có thể có nhiều class như ở dưới là 2 class khác nhau header_container và container -->
+        <div class=" header_container container">
+            <a class="header_logo" href="#">
+                <i class="fab fa-atlassian"></i>
+                <span>Meipaly</span>
+            </a>
+            <nav class="header_navbar">
+                <a class="active" href="#">HOME</a>
+                <a href="#">SERVICE</a>
+                <a href="#">SHOWCASE</a>
+                <a href="#">BLOG</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner_container container">
+            <p>WELCOME TO MEIPALY AGENCY</p>
+            <h1>SMART WEB <br> DEGIGN AGENCY</h1>
+            <button>READ MORE</button>
+            <i class="fa fa-angle-down"></i>
+        </div>
+    </section>
+    <section class="service py-5">
+        <div class="container">
+            <div class="title">
+                <p>SERVICES WE ARE OFFERING</p>
+                <h1>WE DESIGN DIGITAL PRODUCTS THAT HELP GROW BUSINESSES.</h1>
+                <p> We are committed to providing our customers with exceptional service while offering <br> our employees the best training.
+                </p>
+            </div>
+            <div class="service__content">
+                <div class="service__slide">
+                    <div class="service__item">
+                        <i class="fa-solid fa-dice-d6"></i>
+                        <p>APP MOBILE <br> DEVELOPMENT</p>
+                    </div>
+                    <div class="service__item">
+                        <i class="fa-brands fa-autoprefixer"></i>
+                        <p>DIGITAL <br> MARKETING</p>
+                    </div>
+                    <div class="service__item">
+                        <i class="fa-brands fa-500px"></i>
+                        <p>SEO & CONTENT <br> WRITING</p>
+                    </div>
+                    <div class="service__item">
+                        <i class="fa-solid fa-blog"></i>
+                        <p>WEBSITE <br> DEVELOPMENT</p>
+                    </div>
+                    <div class="service__item">
+                        <i class="fa-brands fa-battle-net"></i>
+                        <p>SEO & CONTENT <br> WRITING</p>
+                    </div>
+                    <div class="service__item">
+                        <i class="fa-solid fa-memory"></i>
+                        <p>APP MOBILE <br> DEVELOPMENT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="post py-5">
+        <div class="container">
+            <div class="title">
+                <p>OUR NEWS & ARTICLES</p>
+                <h1>LATEST BLOG POSTS</h1>
+                <p>We are committed to providing our customers  with exceptional service while offering our <br>
+                employees the best training.</p>
+            </div>
+            <div class="post__content">
+                <div class="post__item post__item__1">
+                    <img src="./img/grid-metro-1.jpg" alt="">
+                    <!-- DÙNG LÀM LỚP MÀNG KHI OVER VÀO HÌNH -->
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-1.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <img src="./img/grid-metro-2.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-2.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <img src="./img/grid-metro-3.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-3.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <img src="./img/grid-metro-4.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-4.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <img src="./img/grid-metro-5.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-5.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <img src="./img/grid-metro-6.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-6.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <img src="./img/grid-metro-7.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-7.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <img src="./img/grid-metro-8.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-8.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <img src="./img/grid-metro-9.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-9.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item post__item__10">
+                    <img src="./img/grid-metro-10.jpg" alt="">
+                    <div class="post__overlay">
+                        <div class="post__overlay__icon">
+                            <a href="./img/grid-metro-10.jpg" data-fancybox="gallery" data-caption="Caption #1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        </div>
+                        <div class="post__overlay__text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="statistic py-5">
+        <div class="container">
+            <div class="statistic__content">
+                <div class="statistic__item">
+                    <p class="counter">8,705</p>
+                    <h3>PROJECTS COMPLETED</h3>
+                </div>
+                <div class="statistic__item">
+                    <p class="counter">480</p>
+                    <h3>ACTIVE CLIENTS</h3>
+                </div>
+                <div class="statistic__item">
+                    <p class="counter">625</p>
+                    <h3>CUPS OF COFFEE</h3>
+                </div>
+                <div class="statistic__item">
+                    <p class="counter">9,774</p>
+                    <h3>HAPPY CLIENTS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience py-5">
+        <div class="container">
+            <div class="title">
+                <p>HOW DO WE WORKS</p>
+                <h1>DIGITAL EXPERIENCE</h1>
+                <p>We are committed to providing our customers with exceptional service while offering our <br>
+                    employees the best training.
+                    </p>
+            </div>
+            <div class="experience__content">
+                <!-- CÁCH 1 lưu video trực tiếp trên folder của mình-->
+                <!-- poster là hình poster ở ngoài khi chưa bấm xem video -->
+                <video controls poster="./img/home_slider.jpg">
+                    <source src="./img/video.mp4" />
+                </video>
+                <!-- CÁCH 2: UPLOAD BÊN THỨ 3 -->
+                <!-- <iframe width="100%" height="1000px" src="https://www.youtube.com/embed/1eDKRlNZewg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> -->
+        </div>
+    </section>
+    <section class="contact py-5">
+        <div class="container">
+            <div class="title">
+                <!-- ANIMATION- HIỆU ỨNG -->
+                <h1 class="animate__animated animate__swing wow">CONTACT</h1>
+                <p>Thank you for your interest in our website & our services. If you have any <br>
+                    questions, please write us a message now!</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3911358209702!2d106.78646587469831!3d10.857826089295896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527726d97057f%3A0x3d5f5a2cd75f494a!2zS2h1IEPDtG5nIE5naOG7hyBDYW8gUXXhuq1uIDk!5e0!3m2!1svi!2s!4v1682257359655!5m2!1svi!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact__form">
+                    <form>
+                        <!-- placeholder để hiện nội dung gợi ý trong ô nhập -->
+                        <input type="text" placeholder="Username" />
+                        <!-- <input type="number" />
+                        <input type="password">
+                        <input type="email">
+                        <input type="radio">
+                        <input type="checkbox"> -->
+                        <input type="email" placeholder="Email Address" />
+                        <textarea cols="30" rows="10" placeholder=" Ask question..."></textarea>
+                        <!-- input - button thêm value để hiện thị -->
+                        <input type="button" value="Submit" class="button"/>
+                        <!-- người ta nhấn enter sẽ ăn vào submit luôn -->
+                        <!-- <input type="submit" value="Submit"> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>© 2021 UI-CYBERSOFT. ALL RIGHTS RESERVED.</p>
+                <div class="footer__social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- MŨI TÊN BACK TO TOP -->
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- TỰ VIẾT 1 HIỆU ỨNG -->
+    <div class="square"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- JQUERY ĐỂ DÙNG THƯ VIỆN SLICK -->
+    <!-- ĐẶT NÓ NẰM Ở CUỐI CÙNG TRONG BODY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- THÊM ĐƯỜNG DẪN JS sử dụng script có SRC-->
+    <!-- FILE SLICK.JS VÀ -->
+    <script src="./libs/slick/slick.min.js"></script>
+    <!-- CODE JS SẼ ĐẶT TRONG THẺ script -->
+    <script>
+        $(document).ready(function(){
+            $('.service__slide').slick({
+                //setting-name: setting-value
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay:true,
+                autoplaySpeed: 1000,
+                dots:true,
+            });
+        });
+    </script>
+    <!-- SC CỦA THƯ VIỆN FANCYBOX DÙNG ĐỂ HIỂN THỊ HÌNH ẢNH NHƯ BỘ SƯU TẬP -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+        });
+    </script>
+    <!-- WAYPOINT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./libs/countup/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- JS CỦA BACKTOTOP -->
+    <!-- THỨ TỰ HƯỚNG DẪN CỦA THƯ VIỆN JS NTN THÌ VIẾT THỨ TỰ THEO NHƯ VẬY -->
+    <script src="./libs/backtotop/util.js"></script>
+    <script src="./libs/backtotop/main.js"></script>
+    <!-- WOWJS - HIỆU ỨNG CHỈ CHẠY KHI NGƯỜI DÙNG KÉO ĐẾN VỊ TRÍ -->
+    <script src="./libs/wowjs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
